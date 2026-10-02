@@ -78,9 +78,7 @@ export const TEAM = {
       name:    "Thenappan T",
       alias:   "MasterZ",
       role:    "President & SBGL",
-      regNo:   "44110855",
-      email:   "thenappanmasterz1311@gmail.com",
-      phone:   "+91 6381801640",
+      email:   "sistawscc@gmail.com",
       domain:  "Executive Leadership & AWS Compliance",
       mandate: "Overall project sign-off, AWS compliance review, sponsorship integration, and domain approvals.",
       photo:   null, // Agent: set to '/assets/images/team/thenappan.jpg' when image is available

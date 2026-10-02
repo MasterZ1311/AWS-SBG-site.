@@ -36,3 +36,17 @@ yarn-error.log*
 # TypeScript cache
 *.tsbuildinfo
 next-env.d.ts
+
+# Documentation, Internal Guides & Specifications
+docs/
+app/docs/
+website/docs/
+0[0-9]_*.md
+AGENT_INSTRUCTIONS.md
+AGENTS.md
+CLAUDE.md
+app/AGENTS.md
+app/CLAUDE.md
+*.docx
+*.pdf
+

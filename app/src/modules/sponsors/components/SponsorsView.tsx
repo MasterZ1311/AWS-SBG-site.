@@ -298,14 +298,11 @@ export function SponsorsView() {
             Direct Inquiries with Chapter Leadership
           </h3>
           <p className="text-body" style={{ color: "var(--color-text-secondary)", maxWidth: "640px", margin: "0 auto 24px" }}>
-            For customized sponsorship packages, campus CSR initiatives, or tech talk requisitions, contact Chapter President <strong>Thenappan T</strong> directly.
+            For customized sponsorship packages, campus CSR initiatives, or tech talk requisitions, contact Chapter Leadership directly.
           </p>
           <div style={{ display: "flex", justifyContent: "center", gap: "16px", flexWrap: "wrap" }}>
             <Button href="mailto:sistawscc@gmail.com" variant="primary" size="md">
               Email sistawscc@gmail.com
-            </Button>
-            <Button href="tel:+916381801640" variant="outline" size="md">
-              Call +91 6381801640
             </Button>
           </div>
         </div>

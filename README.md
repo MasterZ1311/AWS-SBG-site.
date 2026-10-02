@@ -1,38 +1,152 @@
-# AWS STUDENT BUILDER GROUP (AWS SBGL) — WEBSITE ARCHITECTURE & BRAND SUITE
-## Dedicated Engineering Documentation, Brand Guidelines & Pitch Playbook
-**Directory:** [`Website/`](file:///e:/AWS%20SBGL/Website)  
-**Chapter:** AWS Student Builder Group — SIST Chapter (Sathyabama Institute of Science and Technology, Chennai)  
-**President & SBGL:** Thenappan T (MasterZ) · Reg: `44110855` · `thenappanmasterz1311@gmail.com` · `+91 6381801640`  
-**Builder Team Lead:** Viswanathan Ashok  
-**Technical Team Lead:** Shanmugapriyan  
-**Events and Management Team Lead:** Nangaiyar M  
-**Media Team Lead:** Caroline Mary McPherson  
-**Media Team Co-Lead:** Harshith Raj S  
-**Documentation Team Lead:** Hemavarshine S  
-**Faculty Advisors:** Dr. K. Ashok Kumar & Dr. Balapriya .S (Department of CSE)  
+# AWS Student Builder Group (AWS SBG) — SIST Chapter
+> Official Web Platform & Community Portal for Sathyabama Institute of Science and Technology, Chennai
+
+[![Next.js 16](https://img.shields.io/badge/Next.js-16.0-black?logo=next.js)](https://nextjs.org/)
+[![React 19](https://img.shields.io/badge/React-19-blue?logo=react)](https://react.dev/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5.0-3178C6?logo=typescript)](https://www.typescriptlang.org/)
+[![AWS](https://img.shields.io/badge/AWS-Cloud-FF9900?logo=amazon-aws)](https://aws.amazon.com/)
+[![License](https://img.shields.io/badge/Access-100%25%20Free%20for%20Students-success)](#)
 
 ---
 
-## 1. Quick-Start Directory Overview
+## 🚀 Overview
 
-This dedicated subfolder houses the complete architectural specification, visual identity standards, asset inventory, and turnkey AI prompt directives for building and launching the chapter's official web presence.
+The **AWS Student Builder Group (AWS SBG) — SIST Chapter** is an official student-led builder community at **Sathyabama Institute of Science and Technology (SIST), Chennai**, recognized under the global AWS Student Builder initiative. 
 
-| Document | Focus & Operational Scope | Key Highlights |
+This repository houses the chapter's official web platform, providing:
+- **Telemetry & Chapter Metrics**: Live builder counts, certification trackers, and event archives.
+- **Events & Hackathons**: Dual-registration engine for upcoming workshops and all-time past event recaps (including Kairos 2027).
+- **Domains & Squads**: Detailed charters for Cloud Architecture, DevOps, GenAI/ML, Web/Mobile, CyberSec, IoT, and Competitive Programming.
+- **Content Hub & Technical Articles**: Community tutorials, architectural case studies, exam prep blueprints, and study notes.
+- **Leadership & Roster**: Chapter organizational directory spanning executive leadership, core leads, and faculty advisors.
+- **Partners & Sponsorships**: Engagement matrix, sponsor tiers, and prospectus request flows.
+
+---
+
+## 🏗️ Architecture & Tech Stack
+
+The application is structured as a modern high-performance cloud-native web platform:
+
+- **Framework**: [Next.js 16](https://nextjs.org) (App Router) with [React 19](https://react.dev)
+- **Language**: [TypeScript](https://www.typescriptlang.org)
+- **Design System**: Amazon Ember-inspired design language, Squid Ink neutral palette (`#0B0F17`), and AWS Builder Orange (`#FF9900`) accent system
+- **Components**: Modular atomic component kit (Card, Badge, Button, Modal, Container, StatCard)
+- **Telemetry & Data**: Centralized typed schema with single-source-of-truth datasets
+- **Deployment**: Optimized for static export and serverless hosting on Amazon S3 + CloudFront CDN + ACM Free SSL + Route 53
+
+---
+
+## 📁 Repository Structure
+
+```text
+├── app/                  # Next.js 16 Production Web Application
+│   ├── public/           # Static media assets, brandmarks, and typography
+│   ├── src/
+│   │   ├── app/          # Next.js App Router routes & page layouts
+│   │   ├── data/         # Single-source-of-truth telemetry, events, & team data
+│   │   ├── lib/          # Utilities, motion helpers, and formatting tools
+│   │   ├── modules/      # Self-contained domain modules:
+│   │   │   ├── about/        # Chapter mission, timeline, & FAQ
+│   │   │   ├── admin/        # Chapter administration portal
+│   │   │   ├── content-hub/  # Articles, notes, and learning resources
+│   │   │   ├── design-system/# UI primitives, design tokens, & layout components
+│   │   │   ├── domains/      # Technical domain breakdown & squad showcases
+│   │   │   ├── events/       # Event archive, filters, and registration portals
+│   │   │   ├── gallery-faq/  # Photo galleries and community FAQs
+│   │   │   ├── home/         # Hero telemetry, pillars, and Kairos spotlight
+│   │   │   ├── join/         # Chapter onboarding and member application flows
+│   │   │   ├── members/      # Community directory & builder search
+│   │   │   ├── projects/     # Student cloud builds and legacy showcases
+│   │   │   ├── sponsors/     # Tier matrix, corporate perks, and inquiries
+│   │   │   └── team/         # Annual leadership and faculty coordinator rosters
+│   │   └── types/        # TypeScript interfaces and telemetry contracts
+│   └── package.json      # Dependencies and execution scripts
+├── src/                  # Turnkey static prototype & standalone HTML preview
+│   ├── assets/           # Brand icons, event artwork, and QR codes
+│   ├── css/              # Standalone design tokens and responsive CSS
+│   ├── data/             # Static JavaScript mock data source
+│   ├── pages/            # Multi-page HTML templates
+│   └── index.html        # Root prototype entrypoint
+├── .gitignore            # Git exclusion rules
+└── README.md             # Project documentation
+```
+
+---
+
+## 🛠️ Getting Started
+
+### Prerequisites
+
+- [Node.js](https://nodejs.org/) (version `18.17.0` or later recommended)
+- `npm`, `pnpm`, or `yarn`
+
+### Installation & Local Development
+
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/MasterZ1311/AWS-SBG-site..git
+   cd AWS-SBG-site.
+   ```
+
+2. **Navigate to the web app:**
+   ```bash
+   cd app
+   ```
+
+3. **Install dependencies:**
+   ```bash
+   npm install
+   ```
+
+4. **Launch the local development server:**
+   ```bash
+   npm run dev
+   ```
+
+5. **Open in browser:**
+   Navigate to [http://localhost:3000](http://localhost:3000) to explore the live application.
+
+### Building for Production
+
+To create an optimized production build:
+
+```bash
+npm run build
+npm run start
+```
+
+---
+
+## 👥 Chapter Leadership (2026–2027)
+
+| Role | Name | Domain / Mandate |
 | :--- | :--- | :--- |
-| **[`00_MASTER_WEBSITE_CREATION_AND_BRAND_GUIDE.md`](file:///e:/AWS%20SBGL/Website/00_MASTER_WEBSITE_CREATION_AND_BRAND_GUIDE.md)** | **Master Executive Overview & Pitch Blueprint** | Single source of truth, 4 stakeholder pitch frameworks, telemetry targets, leadership roster, and 10-step deployment roadmap. |
-| **[`01_BRAND_GUIDELINES_AND_ASSET_REPOSITORY_MAP.md`](file:///e:/AWS%20SBGL/Website/01_BRAND_GUIDELINES_AND_ASSET_REPOSITORY_MAP.md)** | **Asset Inventory & Design Abstracts** | Exact file paths and semantic abstracts for Amazon Ember fonts, brandmarks, program icons, PPT templates, color tokens, and $1\times A$ clear space. |
-| **[`02_WEBSITE_SECTIONS_AND_PAGE_ARCHITECTURE.md`](file:///e:/AWS%20SBGL/Website/02_WEBSITE_SECTIONS_AND_PAGE_ARCHITECTURE.md)** | **Route Specifications & Blueprints** | Granular layout blueprints for All-Time Event Archive (`/events`), Upcoming Event Portal (`/events/upcoming`), Annual Team Rosters (`/team`), Domains (`/domains`), Projects (`/projects`), and Resources. |
-| **[`03_AWS_GUIDELINES_VS_LEGACY_STANDARDS_MATRIX.md`](file:///e:/AWS%20SBGL/Website/03_AWS_GUIDELINES_VS_LEGACY_STANDARDS_MATRIX.md)** | **Legacy vs. Official AWS Compliance Matrix** | Contrast of legacy student club habits vs. strict AWS global directives (naming, logos, disclaimers, 100% free fee guarantee, pulse surveys, Meetup sync). |
-| **[`04_PROMPT_WISE_STYLING_AND_DEVELOPER_DIRECTIVES.md`](file:///e:/AWS%20SBGL/Website/04_PROMPT_WISE_STYLING_AND_DEVELOPER_DIRECTIVES.md)** | **Turnkey Developer Prompts & CSS Tokens** | Copy-pasteable prompt blocks for the Web Lead and AI coders covering CSS design tokens, sticky navigation, pitch hero, countdowns, team rosters, and footers. |
-| **[`05_UI_COMPONENT_KIT_AND_COPY_BANK.md`](file:///e:/AWS%20SBGL/Website/05_UI_COMPONENT_KIT_AND_COPY_BANK.md)** | **UI Component Code & Copy Bank** | Ready-to-copy HTML/CSS component snippets (header, dual-registration card, compliant footer) and verified editorial copy bank for pitch decks and FAQs. |
-| **[`06_FRONTEND_TECH_STACK_AND_AWS_DEPLOYMENT_GUIDE.md`](file:///e:/AWS%20SBGL/Website/06_FRONTEND_TECH_STACK_AND_AWS_DEPLOYMENT_GUIDE.md)** | **Serverless Cloud Infrastructure** | Hosting architecture on Amazon S3 + CloudFront CDN + ACM Free SSL + Route 53, local font setup, Core Web Vitals targets, and GitHub Actions CI/CD. |
+| **President & SBGL** | **Thenappan T (MasterZ)** | Executive Leadership & AWS Global Compliance |
+| **Builder Team Lead** | **Viswanathan Ashok** | Hands-On Builder Squad & Project Curations |
+| **Technical Team Lead** | **Shanmugapriyan** | Technical & Cloud Infrastructure Architecture |
+| **Events & Management Lead** | **Nangaiyar M** | Event Logistics, Stage Management & Run-of-Show |
+| **Media Team Lead** | **Caroline Mary McPherson** | Media, Creative Direction & Brand Storytelling |
+| **Media Team Co-Lead** | **Harshith Raj S** | Video Production, Broadcasts & Reels |
+| **Documentation Team Lead** | **Hemavarshine S** | Documentation, Governance & Audit Compliance |
+| **Faculty Advisors** | **Dr. K. Ashok Kumar & Dr. Balapriya .S** | Department of Computer Science & Engineering |
 
 ---
 
-## 2. Core Official Touchpoint Quick Links
-* **Official Instagram**: [`https://www.instagram.com/aws.studentbuildergroup_sist/`](https://www.instagram.com/aws.studentbuildergroup_sist/) (`@aws.studentbuildergroup_sist`)
-* **Official LinkedIn**: [`https://www.linkedin.com/company/aws-sbg-sist/`](https://www.linkedin.com/company/aws-sbg-sist/) (`aws-sbg-sist`)
-* **Official Meetup Chapter**: [`https://meetup.com/aws-student-builder-group-sist`](https://meetup.com/aws-student-builder-group-sist)
-* **Official AWS Builder Center**: [`https://s12d.com/students`](https://s12d.com/students)
-* **Official Attendee Feedback**: `https://pulse.aws`
-* **Official Email**: `sistawscc@gmail.com`
+## 🌐 Official Community Touchpoints
+
+Stay connected with the chapter across official AWS community platforms:
+
+* **Official Meetup Chapter**: [AWS Student Builder Group — SIST](https://meetup.com/aws-student-builder-group-sist)
+* **Official LinkedIn**: [AWS SBG SIST](https://www.linkedin.com/company/aws-sbg-sist/) (`aws-sbg-sist`)
+* **Official Instagram**: [@aws.studentbuildergroup_sist](https://www.instagram.com/aws.studentbuildergroup_sist/)
+* **Official AWS Builder Center**: [s12d.com/students](https://s12d.com/students)
+* **Official Attendee Feedback**: [pulse.aws](https://pulse.aws)
+* **Chapter Inquiries & Support**: `sistawscc@gmail.com`
+
+---
+
+## 📜 Compliance & Attribution
+
+* **AWS Student Builder Group**: This chapter operates in adherence to official AWS Student Community Brand and Event Guidelines.
+* **100% Free Access**: In strict accordance with global AWS community directives, all chapter workshops, certifications bootcamps, and events are 100% free of charge for students.
+* **Trademarks**: Amazon Web Services, AWS, and the AWS logo are trademarks of Amazon.com, Inc. or its affiliates.

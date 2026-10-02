@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- ── SEO META ── -->
+  <title>AWS Student Builder Group — SIST Chapter | Official Student Cloud Community</title>
+  <meta name="description" content="The official AWS Student Builder Group at Sathyabama Institute of Science and Technology. Hands-on cloud labs, serverless architecture, 100% free certification vouchers, and national hackathons." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://sbg-sist.in/" />
+
+  <!-- ── OPEN GRAPH ── -->
+  <meta property="og:type"        content="website" />
+  <meta property="og:title"       content="AWS Student Builder Group — SIST Chapter" />
+  <meta property="og:description" content="We Don't Just Learn the Cloud. We Engineer the Future. Explore workshops, hackathons, and certified builder projects." />
+  <meta property="og:url"         content="https://sbg-sist.in" />
+  <meta property="og:image"       content="https://sbg-sist.in/assets/images/og-preview-card.png" />
+
+  <!-- ── TWITTER CARDS ── -->
+  <meta name="twitter:card"        content="summary_large_image" />
+  <meta name="twitter:title"       content="AWS Student Builder Group — SIST Chapter" />
+  <meta name="twitter:description" content="Official student cloud developer community at Sathyabama. 100% free hands-on cloud labs and national hackathons." />
+  <meta name="twitter:image"       content="https://sbg-sist.in/assets/images/og-preview-card.png" />
+
+  <!-- ── FAVICON ── -->
+  <link rel="icon" type="image/png" href="/assets/images/logo/AWS Student Builder Group_RGB_Program Icon_White.png" />
+
+  <!-- ── STYLES ── -->
+  <!-- NOTE FOR AGENTS: Always import tokens.css first. Then import page-specific CSS. -->
+  <link rel="stylesheet" href="css/tokens.css" />
+  <link rel="stylesheet" href="css/components.css" />
+  <link rel="stylesheet" href="css/home.css" />
+</head>
+<body>
+
+  <!-- ══════════════════════════════════════════════════════════════════════
+       GLOBAL HEADER
+       Agent Note: This component is in /components/header.html
+       Include via JS fetch or SSI in future. For now it's inline.
+       ══════════════════════════════════════════════════════════════════════ -->
+  <header class="aws-header" id="site-header" role="banner">
+    <div class="aws-header-inner">
+
+      <!-- Brandmark — mandatory 1×A clear-space buffer (padding: 8px 14px) -->
+      <a href="/" class="aws-brand-link" aria-label="AWS Student Builder Group SIST — Home">
+        <img
+          src="/assets/images/brandmark/AWS Student Builder Group_RGB_Brandmark_White.png"
+          alt="AWS Student Builder Group"
+          class="aws-brandmark-img"
+          width="160"
+          height="auto"
+        />
+      </a>
+
+      <!-- Center Navigation -->
+      <nav class="aws-nav" aria-label="Main Navigation" id="main-nav">
+        <ul class="aws-nav-list">
+          <li><a href="/"          class="aws-nav-item active" aria-current="page">Home</a></li>
+          <li><a href="/about"     class="aws-nav-item">About</a></li>
+          <li class="aws-nav-dropdown">
+            <a href="/events" class="aws-nav-item" aria-haspopup="true">Events ▾</a>
+            <ul class="aws-dropdown-menu" role="menu">
+              <li role="menuitem"><a href="/events">All-Time Archive</a></li>
+              <li role="menuitem"><a href="/events/upcoming">Active &amp; Upcoming</a></li>
+            </ul>
+          </li>
+          <li class="aws-nav-dropdown">
+            <a href="/team" class="aws-nav-item" aria-haspopup="true">Team ▾</a>
+            <ul class="aws-dropdown-menu" role="menu">
+              <li role="menuitem"><a href="/team/2026-2027">Batch 2026–2027</a></li>
+              <li role="menuitem"><a href="/team/2025-2026">Founding Cohort</a></li>
+              <li role="menuitem"><a href="/team/hall-of-fame">Hall of Fame</a></li>
+            </ul>
+          </li>
+          <li><a href="/domains"   class="aws-nav-item">Domains</a></li>
+          <li><a href="/projects"  class="aws-nav-item">Projects</a></li>
+          <li><a href="/resources" class="aws-nav-item">Resources</a></li>
+        </ul>
+      </nav>
+
+      <!-- Right: Social + CTA -->
+      <div class="aws-header-actions">
+        <!-- Instagram -->
+        <a href="https://www.instagram.com/aws.studentbuildergroup_sist/" target="_blank" rel="noopener noreferrer"
+           class="aws-social-icon" title="Instagram @aws.studentbuildergroup_sist" aria-label="Follow on Instagram">
+          <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+          </svg>
+        </a>
+        <!-- LinkedIn -->
+        <a href="https://www.linkedin.com/company/aws-sbg-sist/" target="_blank" rel="noopener noreferrer"
+           class="aws-social-icon" title="LinkedIn aws-sbg-sist" aria-label="Follow on LinkedIn">
+          <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+          </svg>
+        </a>
+        <!-- Meetup -->
+        <a href="https://meetup.com/aws-student-builder-group-sist" target="_blank" rel="noopener noreferrer"
+           class="aws-social-icon" title="Meetup Chapter" aria-label="Join our Meetup chapter">
+          <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M19.34 11.23c-.11-.47-.32-.9-.6-1.28l1.45-1.45a1.14 1.14 0 0 0 0-1.61l-1.61-1.61a1.14 1.14 0 0 0-1.61 0l-1.45 1.45c-.38-.28-.81-.49-1.28-.6V4.08a1.14 1.14 0 0 0-1.14-1.14h-2.28a1.14 1.14 0 0 0-1.14 1.14v1.99c-.47.11-.9.32-1.28.6l-1.45-1.45a1.14 1.14 0 0 0-1.61 0l-1.61 1.61a1.14 1.14 0 0 0 0 1.61l1.45 1.45c-.28.38-.49.81-.6 1.28H4.08a1.14 1.14 0 0 0-1.14 1.14v2.28c0 .63.51 1.14 1.14 1.14h1.99c.11.47.32.9.6 1.28l-1.45 1.45a1.14 1.14 0 0 0 0 1.61l1.61 1.61a1.14 1.14 0 0 0 1.61 0l1.45-1.45c.38.28.81.49 1.28.6v1.99c0 .63.51 1.14 1.14 1.14h2.28c.63 0 1.14-.51 1.14-1.14v-1.99c.47-.11.9-.32 1.28-.6l1.45 1.45a1.14 1.14 0 0 0 1.61 0l1.61-1.61a1.14 1.14 0 0 0 0-1.61l-1.45-1.45c.28-.38.49-.81.6-1.28h1.99c.63 0 1.14-.51 1.14-1.14v-2.28a1.14 1.14 0 0 0-1.14-1.14h-1.99zM12 15.5a3.5 3.5 0 1 1 0-7 3.5 3.5 0 0 1 0 7z"/>
+          </svg>
+        </a>
+        <!-- Primary CTA -->
+        <a href="https://s12d.com/students" target="_blank" rel="noopener noreferrer"
+           class="btn-primary" id="header-cta">
+          Create Builder ID
+        </a>
+        <!-- Mobile Hamburger -->
+        <button class="aws-hamburger" id="hamburger-btn" aria-label="Toggle navigation menu"
+                aria-expanded="false" aria-controls="main-nav">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ══════════════════════════════════════════════════════════════════════
+       MAIN CONTENT — Page-specific sections injected below
+       Agent Note: Each page HTML file renders its own <main> content.
+       ══════════════════════════════════════════════════════════════════════ -->
+  <main id="main-content">
+
+    <!-- ── HERO SECTION ── -->
+    <section class="hero bg-hero-ambient" id="hero" aria-labelledby="hero-headline">
+      <div class="container--md hero-inner">
+
+        <!-- Eyebrow Badge -->
+        <div class="pill-free hero-eyebrow" role="status" aria-live="polite">
+          🟢 Official Amazon Web Services Student Community &nbsp;·&nbsp; 600+ Campuses Global
+        </div>
+
+        <!-- H1 Headline -->
+        <h1 class="hero-headline" id="hero-headline">
+          We Don't Just Learn the Cloud.<br>
+          <span class="text-amber-gradient">We Engineer the Future.</span>
+        </h1>
+
+        <!-- Subheadline -->
+        <p class="hero-sub">
+          The premier student cloud development community at Sathyabama Institute of Science and Technology.
+          Hands-on serverless labs, production agentic AI, 100% free AWS exam vouchers, and high-stakes national hackathons.
+        </p>
+
+        <!-- CTA Row -->
+        <div class="hero-cta-row">
+          <a href="/events/upcoming" class="btn-primary" id="hero-cta-primary">
+            Explore Upcoming Events →
+          </a>
+          <a href="/sponsors" class="btn-secondary" id="hero-cta-secondary">
+            Download Club Pitch Deck
+          </a>
+        </div>
+
+        <!-- Live Telemetry Strip -->
+        <div class="telemetry-strip card-glass" id="telemetry-strip" aria-label="Live chapter metrics">
+          <div class="telemetry-grid">
+            <!-- Agent: Rendered from KPI array in site-data.js -->
+            <div class="telemetry-item">
+              <span class="telemetry-value" data-target="1200">1,200+</span>
+              <span class="telemetry-label">Active Builders</span>
+            </div>
+            <div class="telemetry-item">
+              <span class="telemetry-value">6 / Year</span>
+              <span class="telemetry-label">Flagship Events</span>
+            </div>
+            <div class="telemetry-item">
+              <span class="telemetry-value">100% Free</span>
+              <span class="telemetry-label">Zero Entry Fee</span>
+            </div>
+            <div class="telemetry-item">
+              <span class="telemetry-value">50+</span>
+              <span class="telemetry-label">AWS Certified Builders</span>
+            </div>
+            <div class="telemetry-item">
+              <span class="telemetry-value">₹1.75L+</span>
+              <span class="telemetry-label">Cash Hackathon Prizes</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ── PLACEHOLDER SECTIONS — agents expand these into full pages ── -->
+    <section class="section" id="pillars" aria-labelledby="pillars-heading">
+      <div class="container">
+        <h2 id="pillars-heading"><!-- Agent: The 3 Core Pillars section goes here --></h2>
+      </div>
+    </section>
+
+    <section class="section" id="featured-event" aria-labelledby="featured-event-heading">
+      <div class="container">
+        <h2 id="featured-event-heading"><!-- Agent: Featured Event Spotlight (Kairos 2027) goes here --></h2>
+      </div>
+    </section>
+
+    <section class="section" id="sponsors-wall" aria-labelledby="sponsors-heading">
+      <div class="container">
+        <h2 id="sponsors-heading"><!-- Agent: Corporate Sponsor Showcase goes here --></h2>
+      </div>
+    </section>
+
+    <section class="section" id="community-cta" aria-labelledby="cta-heading">
+      <div class="container">
+        <h2 id="cta-heading"><!-- Agent: Community CTA (Join Meetup & Builder ID) goes here --></h2>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ══════════════════════════════════════════════════════════════════════
+       GLOBAL FOOTER — Mandatory on EVERY page
+       ══════════════════════════════════════════════════════════════════════ -->
+  <footer class="aws-footer" id="site-footer" role="contentinfo">
+    <div class="aws-footer-grid container">
+
+      <!-- Col 1: Branding & Identity -->
+      <div class="aws-footer-col">
+        <img
+          src="/assets/images/brandmark/AWS Student Builder Group_RGB_Brandmark_White.png"
+          alt="AWS Student Builder Group"
+          class="aws-footer-logo"
+          width="160"
+        />
+        <p class="aws-footer-desc">
+          The premier student cloud development community at Sathyabama Institute of Science and Technology, Chennai.
+        </p>
+        <div class="aws-footer-contact">
+          <p><strong>Official Email:</strong>
+            <a href="mailto:sistawscc@gmail.com">sistawscc@gmail.com</a>
+          </p>
+          <p><strong>President:</strong> Thenappan T</p>
+          <p><strong>Builder Team Lead:</strong> Viswanathan Ashok</p>
+          <p><strong>Technical Team Lead:</strong> Shanmugapriyan</p>
+          <p><strong>Events and Management Team Lead:</strong> Nangaiyar M</p>
+          <p><strong>Media Team Lead:</strong> Caroline Mary McPherson</p>
+          <p><strong>Media Team Co-Lead:</strong> Harshith Raj S</p>
+          <p><strong>Documentation Team Lead:</strong> Hemavarshine S</p>
+        </div>
+      </div>
+
+      <!-- Col 2: Platform Routes -->
+      <div class="aws-footer-col">
+        <h3 class="aws-footer-heading">Platform Routes</h3>
+        <ul class="aws-footer-links">
+          <li><a href="/">Home</a></li>
+          <li><a href="/about">About Chapter</a></li>
+          <li><a href="/events">All-Time Event Archive</a></li>
+          <li><a href="/events/upcoming">Active &amp; Upcoming</a></li>
+          <li><a href="/team">Annual Core Team</a></li>
+          <li><a href="/domains">Specialized Domains</a></li>
+          <li><a href="/projects">Student Projects</a></li>
+          <li><a href="/join">Join the Chapter</a></li>
+        </ul>
+      </div>
+
+      <!-- Col 3: AWS Community -->
+      <div class="aws-footer-col">
+        <h3 class="aws-footer-heading">AWS Community</h3>
+        <ul class="aws-footer-links">
+          <li><a href="https://s12d.com/students"                           target="_blank" rel="noopener">AWS Builder Center</a></li>
+          <li><a href="https://meetup.com/aws-student-builder-group-sist"   target="_blank" rel="noopener">Meetup.com Chapter</a></li>
+          <li><a href="https://www.instagram.com/aws.studentbuildergroup_sist/" target="_blank" rel="noopener">Instagram (@aws.studentbuildergroup_sist)</a></li>
+          <li><a href="https://www.linkedin.com/company/aws-sbg-sist/"      target="_blank" rel="noopener">LinkedIn (aws-sbg-sist)</a></li>
+          <li><a href="/csat">Pulse Attendee Survey</a></li>
+          <li><a href="/articles">Builder Center Articles</a></li>
+          <li><a href="/sponsors">Sponsor the Chapter</a></li>
+        </ul>
+      </div>
+
+      <!-- Col 4: Institution -->
+      <div class="aws-footer-col">
+        <h3 class="aws-footer-heading">Host Institution</h3>
+        <address class="aws-footer-address" style="font-style: normal;">
+          School of Computing<br>
+          Department of Computer Science &amp; Engineering<br>
+          Sathyabama Institute of Science and Technology<br>
+          Jeppiaar Nagar, Chennai 600119, Tamil Nadu, India
+        </address>
+        <p class="aws-footer-mentors">
+          <strong>Faculty Mentors:</strong><br>
+          Dr. K. Ashok Kumar &amp; Dr. Balapriya .S
+        </p>
+      </div>
+
+    </div>
+
+    <!-- Social Bar -->
+    <div class="aws-footer-social-bar">
+      <a href="https://www.instagram.com/aws.studentbuildergroup_sist/"   target="_blank" rel="noopener" aria-label="Instagram">Instagram</a>
+      <a href="https://www.linkedin.com/company/aws-sbg-sist/"              target="_blank" rel="noopener" aria-label="LinkedIn">LinkedIn</a>
+      <a href="https://meetup.com/aws-student-builder-group-sist"           target="_blank" rel="noopener" aria-label="Meetup">Meetup</a>
+      <a href="https://s12d.com/students"                                   target="_blank" rel="noopener" aria-label="AWS Builder Center">Builder Center</a>
+    </div>
+
+    <!-- MANDATORY LEGAL DISCLAIMER STRIP — do NOT omit from any page -->
+    <div class="aws-footer-legal-strip">
+      <p class="aws-disclaimer-text">
+        AWS Student Builder Group Sathyabama is an independent student organization supported by the AWS Student Builder Groups program.
+        Amazon Web Services, AWS, and the AWS logo are trademarks of Amazon.com, Inc. or its affiliates.
+      </p>
+      <p class="aws-copyright-text">
+        © 2026–2027 AWS Student Builder Group — SIST Chapter. All rights reserved.
+      </p>
+    </div>
+  </footer>
+
+  <!-- ── SCRIPTS ── -->
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>
